@@ -35,7 +35,7 @@ body {
 
             .header h1 {
                 font-weight: 700;
-                font-size: 2em;
+                font-size: 1.7em;
             }
 
             .header .wrapper > p {
@@ -322,7 +322,7 @@ body {
       }
         .darkmode p {
           margin-right: 25px;
-          font-size: .8em;
+          font-size: .9em;
         }
 }
 
@@ -333,6 +333,9 @@ body {
     grid-row-gap: 25px;
   }
 
+  .header h1 {
+      font-size: 2em;
+  }
 
   .wrapper {
     max-width: 1920px;
