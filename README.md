@@ -1,5 +1,5 @@
 # Social Media Dashboard (Frontend Mentor Challenge)
-
+Responsive 480/768/1024
 
 ## App: https://socialmediadashboard-34645.web.app/
 
