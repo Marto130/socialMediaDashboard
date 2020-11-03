@@ -1,17 +1,13 @@
-
-
 :root {
-
-  // icons colors
-    --limegreen: hsl(163, 72%, 41%);
     --brightred: hsl(356, 69%, 56%);
+    --limegreen: hsl(163, 72%, 41%);
     --facebook: #168ef4;
     --twitter: hsl(203, 89%, 53%);
     --instagram-color1: hsl(37, 97%, 70%);
     --instagram-color2: hsl(329, 70%, 58%);
     --youtube: hsl(348, 97%, 39%);
 
-  // theme light colors
+
     --body-background: hsl(0, 0%, 100%);
     --header-color: hsl(225, 100%, 98%);
     --card-background:hsl(227, 47%, 96%);
@@ -39,25 +35,19 @@ body {
 
             .header h1 {
                 font-weight: 700;
-                font-size: 1.6em;
+                font-size: 2em;
             }
 
             .header .wrapper > p {
                 color: var(--dark-text);
                 margin-top: 8px;
                 font-weight: 700;
-                font-size: .8em;
+                font-size: 1.1em;
                 border-bottom: 2.5px solid var(--dark-text);
-                padding-bottom: 20px;
+                padding-bottom: 30px;
             }
 
-    .cards-container {
-        margin-top: -50px;
-    }
 
-    .wrapper {
-        padding: 0 15px;
-    }
 
       .darkmode {
         display: flex;
@@ -66,9 +56,12 @@ body {
         margin-top: 20px;
       }
 
-        /* .darckmode p {
-          margin-right:
-        } */
+        .darkmode p {
+          font-weight: 700;
+          font-size: 1.1em;
+          color: var(--dark-text);
+
+        }
 
             #checkbox {
               display: none;
@@ -103,14 +96,17 @@ body {
               transition: .4s;
             }
 
-
-
-
-
-    .grid {
-        display: grid;
-        grid-row-gap: 20px;
+    .cards-container {
+      margin-top: -50px;
     }
+      .wrapper {
+        padding: 0 30px;
+      }
+
+        .grid {
+            display: grid;
+            grid-row-gap: 20px;
+        }
 
             .card {
                 border-radius: 7px;
@@ -118,6 +114,8 @@ body {
                 background: var(--card-background);
                 text-align: center;
                 position: relative;
+                /* box-sizing: border-box; */
+                padding-top: 8px;
             }
 
                     .card::before {
@@ -154,12 +152,11 @@ body {
                         font-weight: bold;
                         justify-content: center;
                         margin-top: 25px;
-                        margin-bottom: 10px;
+                        margin-bottom: 25px;
                     }
 
                             .card-title img {
                                 margin-right: 5px;
-
                             }
 
 
@@ -171,30 +168,31 @@ body {
                                 display: block;
                                 text-transform: uppercase;
                                 color: var(--dark-text);
-                                font-size: .6em;
+                                font-weight: 400;
+                                font-size: .8em;
                                 letter-spacing: 4px;
                                 margin-top: 10px;
                             }
 
                             .card-followers-number {
-                                font-size: 40px;
+                                font-size: 3em;
                                 font-weight: 700;
                             }
 
                             .card-followers-numberToday {
-                                font-size: .6em;
+                                font-size: .8em;
+                                color: var(--limegreen);
                                 font-weight: bold;
                                 margin: 25px 0 25px 0;
-                                color: var(--limegreen);
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
 
 
                             }
-                            .card-followers-numberToday img {
-                                margin-right: 2.5px;
-                            }
+                                .card-followers-numberToday img {
+                                    margin-right: 2.5px;
+                                }
 
   .overview {
         padding-bottom: 2.8em;
@@ -210,13 +208,13 @@ body {
         .card-small {
             align-items: center;
             background: var(--card-background);
-            border-radius: 5px;
+            border-radius: 6px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 50px 50px;
             justify-items: center;
             /* margin-bottom: 1.5em; */
-            padding: 20px 35px 20px 20px;
+            padding: 15px 35px 15px 20px;
 
 
         }
@@ -240,7 +238,7 @@ body {
             .card-small-number {
                 justify-self: start;
                 font-weight: 700;
-                font-size: 1.8em;
+                font-size: 1.9em;
                 line-height: .9;-small
 
             }
@@ -251,8 +249,8 @@ body {
                 align-self: end;
                 display: flex;
                 align-items: center;
-                font-size: .7em;
-                font-weight: bold;
+                font-size: .8em;
+                font-weight: 700;
                 color: var(--limegreen);
             }
                 .card-small-percentage.is-down {
@@ -270,14 +268,12 @@ body {
   --card-background:hsl(227, 47%, 96%);
   --dark-text: hsl(228, 12%, 44%);
   --very-dark-text: hsl(230, 17%, 14%);
-
   --toggle-switch: hsl(230, 22%, 74%);
   --toggle-switch2: hsl(230, 22%, 74%);
 
 }
 
 .dark {
-
   --body-background: hsl(230, 17%, 14%);
   --header-color: hsl(232, 19%, 15%);
   --card-background:hsl(228, 28%, 20%);
@@ -285,9 +281,8 @@ body {
   --very-dark-text: hsl(0, 0%, 100%);
   --toggle-switch: hsl(210, 78%, 56%);
   --toggle-switch2: hsl(146, 68%, 55%);
-
-
 }
+
 /* ------------------------------------------------------------------------ */
 @media screen and (min-width: 480px) {
   .grid {
@@ -295,8 +290,8 @@ body {
     grid-column-gap: 30px;
     grid-row-gap: 25px;
   }
-
 }
+
 
 @media screen and (min-width: 768px) {
   .grid {
@@ -307,6 +302,7 @@ body {
 
   .header {
     padding-bottom: 50px;
+
   }
 
   .wrapper {
@@ -325,7 +321,7 @@ body {
 
       }
         .darkmode p {
-          margin-right: 15px;
+          margin-right: 25px;
           font-size: .8em;
         }
 }
@@ -343,8 +339,9 @@ body {
   }
 }
 
+
 @media (prefers-color-scheme: dark) {
-  /* Dark theme colors. */
+
   :root {
     --body-background: hsl(230, 17%, 14%);
     --header-color: hsl(232, 19%, 15%);
