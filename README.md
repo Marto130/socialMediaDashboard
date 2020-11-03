@@ -1,5 +1,5 @@
 # socialMediaDashboard
 Frontend Mentor Challenge
 
-** App:
+## App:
 https://socialmediadashboard-34645.web.app/
